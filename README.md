@@ -10,4 +10,4 @@
     
 ## Step-by-step setup of DryDock and HarborMaster
 
-*Comming soon...*
+[http://thomas-barthelemy.github.io/2015/09/11/phpunit-phabricator-drydock-harbormaster/](http://thomas-barthelemy.github.io/2015/09/11/phpunit-phabricator-drydock-harbormaster/)
