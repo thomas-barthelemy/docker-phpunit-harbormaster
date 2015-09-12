@@ -29,6 +29,11 @@ COPY php.ini /usr/local/etc/php/php.ini
 # PHP exstension
 RUN cp /usr/lib/php5/20131226/pdo_pgsql.so /usr/local/lib/php/extensions/no-debug-non-zts-20131226/pdo_pgsql.so
 
+# Create database and db user
+RUN service postgresql start \
+    && sudo -u postgres psql -c "create user vagrant with password 'vagrant'" \
+    && sudo -u postgres psql -c "create database symfony"
+
 # Adding SSH start script
 COPY entrypoint.sh /root/entrypoint.sh
 RUN chown root:root /root/entrypoint.sh 

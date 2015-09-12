@@ -12,10 +12,6 @@ export COMPOSER_HOME=/root/composer
 # this allow caching for "commit" requirements (@dev).
 composer install --no-interaction --prefer-dist
 
-# Creating the database
-sudo -u postgres psql -c "create user vagrant with password 'vagrant'"
-sudo -u postgres psql -c "create database symfony"
-
 # No errors tolerated here!
 set -e
 
