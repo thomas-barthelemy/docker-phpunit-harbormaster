@@ -1,7 +1,7 @@
 #!/bin/bash
-service postgresql restart
-service php5-fpm restart
-service apache2 restart
+service postgresql start
+service php5-fpm start
+service apache2 start
 
 cd /code/DeliveryWeb
 
