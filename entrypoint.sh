@@ -19,4 +19,4 @@ set -e
 php app/console doctrine:migrations:migrate --no-interaction
 
 # Running PHPUnit
-phpunit -c app/phpunit.xml.dist
+phpunit -c app/phpunit.xml.dist --log-json unitlog.json
